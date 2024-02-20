@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: dms-v1
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 9100:80
+    hostname: 172.19.0.2
